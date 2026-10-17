@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <link>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Incidencias
+        </title>
+        <link rel="stylesheet" href="./src/main.css"></link>
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <div>
+                    <h1>Incidencias</h1>
+                    <p>Lista de Incidencias registradas para el usuario</p>
+                </div>
+
+                <a href="#">Cerrar Sesión</a>
+            </header>
+            <section class="card">
+                <div id="alert" class="alert" hidden></div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Título</th>
+                                <th>Descripción</th>
+                                <th>Estado</th>
+                                <th>prioridad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="incidencias-body">
+                            <!-- Aquí se agregarán las incidencias dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <button id="previous" disabled>Anterior</button>
+                    <span id="page">Página 1</span>
+                    <button id="next">Siguiente</button>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="./src/index.js"></script>
+    </body>
+</html>

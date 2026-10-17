@@ -1,0 +1,93 @@
+/* --- Centrar y limitar el ancho de toda la página --- */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: #f3f4f6;
+    margin: 40px auto;        /* Margen arriba/abajo y automático a los lados */
+    padding: 0 20px;
+    max-width: 1100px;       /* Ancho máximo idéntico al de la tarjeta */
+    color: #1f2937;
+}
+
+/* Títulos y textos */
+h1, h2, h3 {
+    color: #0F7A8C;
+    margin-bottom: 4px;
+}
+
+p {
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: #6366f1;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilo de la Tabla --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #0F7A8C;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #374151;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+/* --- Botones y Paginación --- */
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Botón deshabilitado (Anterior) */
+button:disabled {
+    background-color: #d1d5db;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Botón activo (Siguiente) */
+button:not(:disabled) {
+    background-color: #0F7A8C;
+    color: #ffffff;
+}
+
+button:not(:disabled):hover {
+    background-color: #0d6b7d;
+}
